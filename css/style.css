@@ -1,0 +1,57 @@
+.frog {
+    z-index: 1;
+    max-width: 100%;
+    height: auto;
+}
+.btn {
+    font-size: 16pt;
+}
+.answer {
+    z-index: 1;
+    width: 500px;
+    height: auto;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    overflow: hidden;
+    background-color: #ffd5e1;
+    height: 100%;
+    width: 100%;
+}
+.container {
+    height: 100%;
+    width: 100%;
+}
+.dialog {
+    flex-direction: row;
+}
+.open {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 0;
+    filter: blur(200px);
+    object-fit: contain;
+}
+@media (max-width: 768px) {
+    .dialog {
+        flex-direction: column-reverse;
+    }
+    .answer {
+        z-index: 1;
+        width: 200px;
+    }
+    .result {
+        font-size: 12pt;
+    }
+    .btn {
+        font-size: 10pt;
+        width: 100%;
+    }
+    .input {
+        width: 100%;
+    }
+}
